@@ -1,0 +1,15 @@
+
+Observaciones:
+
+- Incorpora módulos que nos ayudarán a desarrollar de una mejor forma, 
+y sobre todo, de una manera sencilla de entender.
+- Cualquier desarrollador que conozca Laravel puede interpretar el código.
+- Es una herramienta que tiene una metodología flexible a cualuier sistema que queramos hacer.
+- Se necesitan conocimientos básicos de php para emprezar a usar este framework.
+
+Conclusiones:
+
+- Se necesita manejar la metodología MVC.
+- El MVC es la base de este framework.
+- Las variables de entrono nos ayudan a tner variables en cuatnoa  la configuración del entorno.
+- Composer nos ayuda a gestinar las dependencias en PHP.
