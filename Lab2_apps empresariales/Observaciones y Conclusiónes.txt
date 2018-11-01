@@ -1,0 +1,14 @@
+
+Observaciones:
+
+- El primer paso, es darle los permisos correctos al directorio storage. 
+- Necesitaremos crear una DB para colocar los datos de accesos allí.
+- También debemos generar una KEY para nuestra aplicación.
+- Nos familiarizamos con las rutas para ser la navegación dentro del proyecto, más facil.
+
+Conclusiones:
+
+- El archivo “.env” es muy importante, ya que tendrá algunas de las configuraciones más importantes de la aplicación.
+- Una KEY nos ayudará en la seguridad y es muy importante. 
+- Si no tenemos una KEY las sesiones de nuestros usuarios y la información encriptada, no estará segura.
+- Cambiamos las rutas de nuestro proyecto y las funciones, de acuerdo a la aplicación creada.
