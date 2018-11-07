@@ -1,0 +1,15 @@
+
+Observaciones:
+
+- Las vistas tienen contenido html.
+- Las vistas solo recibirán datos y los prepararán para mostrarlos como HTML.
+- Todos los controladores tienen que extender la clase base Controller.
+- Los controladores son los archivos que se encargan de enviar la información a las vistas.
+- Al referenciar el controlador en el fichero de rutas únicamente tenemos que indicar su nombre y no toda la ruta ni el espacio de nombres.
+
+Conclusiones:
+
+- Las vistas nos permiten separar la parte de la lógica y de la base de datos.
+- Las vistas no tienen que realizar ningún tipo de consulta ni procesamiento de datos.
+- La clase Controller se usa para centralizar toda la lógica que se va a usar de forma compartida por los controladores de nuestra aplicación.
+- Laravel permite la creación de controladores como recursos que capturen todas las rutas de un determinado dominio.
