@@ -44,7 +44,7 @@ class ValidacionController extends Controller {
 		$this->auth = $auth;
 		$this->registrar = $registrar;
 
-		$this->middleware('guest', ['except' => 'getLogout']);
+		$this->middleware('guest', ['except' => 'getSalida']);
 	}
 	/**
 	 * Show the application registration form.
