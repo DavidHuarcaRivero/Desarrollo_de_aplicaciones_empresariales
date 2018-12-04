@@ -1,0 +1,14 @@
+
+Resumido:¿Qué es la Inyección de Dependencias?
+
+
+La Inyección de Dependencias es un patrón de diseño orientado a objetos en el que se suministran objetos a una 
+clase en lugar de ser la propia clase quien cree el objeto. 
+El término fue acuñado por primera vez por Martin Fowler. 
+En la práctica, consiste en pasar a los componentes de software sus dependencias mediante sus constructores, sus propiedades o sus métodos setter.
+
+Ventajas de usar la Inyección de Dependencias
+
+ - Nuestro código se vuelve más modular y menos acoplado, ya que los submódulos no necesitan saber detalles de la implementación de otros en tu código.
+ - Gracias a esta modularidad es que podemos hacer tests unitarios más fácilmente.
+ - La inyección de dependencias puede hacernos escribir código más rápido y quita preocupaciones de tener que instanciar objetos uno mismo.

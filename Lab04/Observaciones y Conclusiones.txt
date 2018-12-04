@@ -1,0 +1,16 @@
+
+Observaciones:
+
+- Composer no puede ver los archivos de migración que está creando.
+- Debemos ejecutar el comando dump-autoload para que busque las clases nuevas a incluir.
+- Laravel al crear una migración agrega como préfijo la fecha y hora en la que fué creada la migración.
+- La clase Schema llama al método create, este nos permite crear la tabla en nuestra BD.
+- El laboratorio tiene problemas de compatibilidad con la versión de php con que trabajamos.
+
+Conclusiones:
+
+- Los datos generados en php myadmi llegan a 25 como máximo, en un gestor mysql se pueden observas los 50 datos generados. 
+- El comando regenera la lista de todas las clases que deben incluirse en el proyecto.
+- Si no ejecutamos el comando, la migración no funciona.
+- Para poder ordenar qué migración va antes que otra, laravel las crea prefijos de fecha y tiempo de creación.
+- La función up crea nuestra tabla en la base de datos, la función down hace lo opuesto.
