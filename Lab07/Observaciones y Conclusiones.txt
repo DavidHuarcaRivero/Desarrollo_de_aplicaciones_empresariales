@@ -1,0 +1,26 @@
+¿Qué hicimos al agregar esa línea?
+- Agregamos un link con funciond e botón para actualizar el álbum.
+
+¿De qué se encargá la función authorize() en este Request?
+- De encontrar y actualizar los datos del álbum de acuerdo a su id.
+
+¿Qué se hizo en el código mostrado?
+- Se obtiene los objetos nombre y descripción. Luego de guardar se redirige a albumes.
+
+Explique: ¿Qué se hizo en esta función?
+- Se obtiene el id de fotos y lo almacena en una variable. 
+
+Observaciones:
+
+- Todas la operaciones de get usan principalmente la variable id.
+- En todos los laboratorios hemos seguido usando un método de validación.
+- Al parecer, no existe una única vía de validación.
+- Mantenemos la lógica de la valicación en los archivos controller.
+
+Conclusiones:
+
+- Dimos funcionabilidad más avanzada al gestor de imagenes, los métodos de edición usaron el metodo save().
+- Podemos comprobar si existe el objeto usando hasFile(). 
+- Laravel nos ofrece varios métodos de validación sencillos y potentes.
+- Noté que necesitamos dos rutas para la validación, en una vemos un formulario y en la otra validamos datos
+ e indicamos las acciones necesarias si son correctos o no.
