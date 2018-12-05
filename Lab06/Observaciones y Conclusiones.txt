@@ -1,0 +1,16 @@
+
+Observaciones:
+
+- Para comprobar que el id de álbum le pertenece al usuario loggeado actualmente, usamos la función authorize.
+- Dimos mucho tamaño de espacio para las imagenes. 
+- La función getcwd(), obtiene el directorio en el que se está trabajando.
+- A una parte de la recepcion del id de la vista de crear fotos, le faltaba el signo de variable a id.
+- Usamos 2 de los 5 tipos de rutas Http (Get y Post). 
+
+Conclusiones:
+
+- La librería Carbon nos brinda una función que devueve el momento en el que se realiza la operación.
+- El cifrado es muy útil en caso de que ocurra una repetición de nombres, pues el cifrado no se repetiría.
+- Podemos saber si estamos recibiendo un dato con HTTP, mediante el método has().
+- Recogemos datos con el get si se envían por la URL, post si se envían por formulario.
+- El metodo de Request, method(), nos indica si es un get o un post, tipo consulta. 
