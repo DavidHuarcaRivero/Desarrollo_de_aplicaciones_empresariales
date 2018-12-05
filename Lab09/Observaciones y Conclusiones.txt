@@ -1,0 +1,30 @@
+Explique: ¿Qué hacen las dos funciones importantes en este request?
+-Autorize() determina los atributos a considerarse para poder eliminar la foto.
+-En la 2da parte definimos condiciones para la eliminación.
+
+¿Cuál es la finalidad de la función unlink, file_exists y realpath?
+-"unlink", borra un fichero.
+-"realpath", devuelve el nombre de la ruta absoluta canonizada. 
+-"file_exists", comprueba si existe un fichero o directorio.
+
+Explique línea a línea la funcionalidad del código mostrado en la función.
+- Tomamos la ruta EliminarFotoRequest para obtener los objetos que este obtiene.
+- Creamos una variable para almacenar el id de la foto a eliminar, 
+luego otra variable para la ruta de la foto a eliminar.
+- Comprobamos si la ruta existe, si existe la eliminar; si no existe, borra la foto.   
+
+Observaciones:
+
+- Laravel sigue la  arquitectura MVC.
+- El informe de errores debería ser más objetiva, específica.
+- El terner conocimientos básico-medio en php ayuda al desarrollo del curso.
+- Lo más confuso estuvo en el laboratorio 4, de ahí aprendimos que pueden causar nuestros errores.
+- Este CRUD desarrollado en Laravel es una competencia con Servlets.
+
+Conclusiones:
+
+- Es preferible trabajar con Laravel, en mi opinión, ya que en servlets las funciones son más complicadas.
+- La validación es uno de los principales puntos a tratar en una página web.
+- Los métodos ofrecidos por Request más los controladores, nos ayudaron a darle una mayor funcionabilidad a nuestro proyecto.
+- La validación por Requests puede ser reutilizable y libera a los controladores de las operaciones de comprobación.
+- Cree el controlador y una sola línea en el archivo de rutas nos da la base para hacer CRUD.
