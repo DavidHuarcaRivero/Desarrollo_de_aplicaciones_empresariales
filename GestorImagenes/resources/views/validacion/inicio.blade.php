@@ -5,11 +5,11 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Login</div>
+				<div class="panel-heading">Iniciar Sesión</div>
 				<div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
-							<strong>Whoops!</strong> Al parecer algo está mal.<br><br>
+							<strong>Whoops!</strong>Al parecer algo está mal.<br><br>
 							<ul>
 								@foreach ($errors->all() as $error)
 									<li>{{ $error }}</li>
@@ -17,19 +17,25 @@
 							</ul>
 						</div>
 					@endif
+					@if(Session::has('recuperada'))
+					<div class="alert alert-success">
+						<strong>Está Hecho</strong> Cambios Realizados.<br><br>
+						{{Session::get('recuperada')}}
 
+					</div>
+					@endif
 					<form class="form-horizontal" role="form" method="POST" action="/validacion/inicio">
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 						<div class="form-group">
-							<label class="col-md-4 control-label">E-Mail Address</label>
+							<label class="col-md-4 control-label">Correo</label>
 							<div class="col-md-6">
 								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label class="col-md-4 control-label">Password</label>
+							<label class="col-md-4 control-label">Contraseña</label>
 							<div class="col-md-6">
 								<input type="password" class="form-control" name="password">
 							</div>
@@ -51,7 +57,7 @@
 									Iniciar Sesión
 								</button>
 
-								<a href="/validacion/recuperar">Olvidé mi contraseña.</a>
+								<a href="/validacion/recuperar">Olvidé mi contraseña</a>
 							</div>
 						</div>
 					</form>

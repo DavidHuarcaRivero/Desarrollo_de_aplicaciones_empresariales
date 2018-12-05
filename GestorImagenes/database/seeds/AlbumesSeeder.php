@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 use GestorImagenes\Album;
 use GestorImagenes\Foto;
 use GestorImagenes\Usuario;
-
 class AlbumesSeeder extends Seeder {
 
 	/**
@@ -16,20 +15,22 @@ class AlbumesSeeder extends Seeder {
 	 */
 	public function run()
 	{
-		$usuarios=Usuario::all();//eloquent
-		$contador=0;
-		foreach ($usuarios as $usuario)
-		{
-				$cantidad = mt_rand(0,15);
-				for($i=0; $i<$cantidad; $i++){
-					$contador++;
-					Album::create(
-						[
-							'nombre' => "Nombre Album$contador",
-							'descripcion' => "Descripción álbum $contador",
-							'usuario_id' => $usuario->id
-						]);
+			$usuarios=Usuario::all();//eloquent
+			$contador=0;
+			foreach($usuarios as $usuario)
+			{
+				$cantidad=mt_rand(0,15);
+				for($i=0; $i < $cantidad; $i++){
+				$contador++;
+				   Album::create(
+						 [
+							 'nombre' => "Nombre Album$contador",
+							 'descripcion' => "Descripción álbum $contador",
+							 'usuario_id' => $usuario->id
+						 ]
+					 );
 				}
-		}
+			}
 	}
+
 }

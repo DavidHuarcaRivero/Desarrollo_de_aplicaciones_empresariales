@@ -1,5 +1,5 @@
 <?php namespace GestorImagenes\Http\Controllers;
-
+	use GestorImagenes\Http\Controllers\Controller;
 class BienvenidaController extends Controller {
 
 	/*
@@ -18,7 +18,8 @@ class BienvenidaController extends Controller {
 	 *
 	 * @return void
 	 */
-	public function __construct(){
+	public function __construct()
+	{
 		$this->middleware('guest');
 	}
 
@@ -27,7 +28,9 @@ class BienvenidaController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function getIndex(){
-		return view ('bienvenida');
+	public function getIndex()
+	{
+		return view ('Bienvenida');
 	}
+
 }

@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 use GestorImagenes\Album;
 use GestorImagenes\Foto;
 use GestorImagenes\Usuario;
-
 class DatabaseSeeder extends Seeder {
 
 	/**
@@ -17,14 +16,12 @@ class DatabaseSeeder extends Seeder {
 	public function run()
 	{
 		DB::statement('SET FOREIGN_KEY_CHECKS = 0');
-
-		Foto::truncate();
-		Album::truncate();
-		Usuario::truncate();
-
+		 Foto::truncate();
+		 Album::truncate();
+		 Usuario::truncate();
 		$this->call('UsuariosSeeder');
 		$this->call('AlbumesSeeder');
-		$this->call('FotosSeede r');
-
+		$this->call('FotosSeeder');
 	}
+
 }

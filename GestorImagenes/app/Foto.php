@@ -2,7 +2,10 @@
 
 use Illuminate\Database\Eloquent\Model;
 
+
 class Foto extends Model{
+
+
 	/**
 	 * The database table used by the model.
 	 *
@@ -15,16 +18,9 @@ class Foto extends Model{
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['id', 'nombre', 'descripcion', 'ruta', 'album_id'];
+	protected $fillable = ['id','nombre', 'descripcion','ruta','album_id'];
 
   public function album(){
-    return $this->belongsTo('GestorImagenes\Album');
+    return$this->belongsto('GestorImagenes\Album');
   }
-	/**
-	 * The attributes excluded from the model's JSON form.
-	 *
-	 * @var array
-	 */
-	//protected $hidden = ['password', 'remember_token'];
-
 }

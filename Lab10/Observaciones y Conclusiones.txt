@@ -1,0 +1,14 @@
+
+Observaciones:
+
+- Este laboratorio es en una optimización del proyecto.
+- En el desarrollo del curso tuve problemas con la versión del php de mis gestores de servidores.
+Terminé trabajando en conjunto con un gestor de myslq puramente, muy aparte de los problemas de software,
+el problema con la sintaxis fue uno de los temas más tocados y resueltos en este curso.
+ 
+Conclusiones:
+
+- La carpeta vendedor nos sirve para levantar la página web.
+- Con el framework Laravel, no solo evitamos reinventar la rueda, si no que nos da una solución a medida para nuestra necesidad.
+El CRUD se utiliza en casi todas las aplicaciones. Laravel nos facilita el proceso mediante el uso de controladores de recursos. 
+Los controladores nos facilitan las cosas y aprovechan los métodos de Laravel. 

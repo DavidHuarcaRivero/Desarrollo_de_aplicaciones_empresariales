@@ -22,11 +22,8 @@ class Usuario extends Model implements AuthenticatableContract, CanResetPassword
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['id', 'nombre', 'email', 'password', 'pregunta', 'respuesta'];
+	protected $fillable = ['id','nombre', 'email', 'password','pregunta','respuesta'];
 
-	public function albumes() {
-		return $this->hasMany('GestorImagenes\Album');
-	}
 	/**
 	 * The attributes excluded from the model's JSON form.
 	 *
@@ -34,4 +31,7 @@ class Usuario extends Model implements AuthenticatableContract, CanResetPassword
 	 */
 	protected $hidden = ['password', 'remember_token'];
 
+	public function albumes(){
+		return $this->hasMany('GestorImagenes\Album');
+	}
 }

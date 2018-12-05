@@ -28,10 +28,12 @@ class InicioController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function getIndex(){
-		return view('inicio');
+	public function getIndex()
+	{
+		return view('Inicio');
 	}
-	public function missingMethod($parameters=array()) {
+	public function missingMethod($parameters=array()){
 		abort(404);
 	}
+
 }

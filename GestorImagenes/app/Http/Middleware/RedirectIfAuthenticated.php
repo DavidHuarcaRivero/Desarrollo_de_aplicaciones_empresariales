@@ -5,6 +5,7 @@ use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\RedirectResponse;
 
 class RedirectIfAuthenticated {
+
 	/**
 	 * The Guard implementation.
 	 *
@@ -30,11 +31,14 @@ class RedirectIfAuthenticated {
 	 * @param  \Closure  $next
 	 * @return mixed
 	 */
-	public function handle($request, Closure $next){
-		if ($this->auth->check()){
-			return new RedirectResponse(url('/validado'));
+	public function handle($request, Closure $next)
+	{
+		if ($this->auth->check())
+		{
+			return new RedirectResponse(url('/validado	'));
 		}
 
 		return $next($request);
 	}
+
 }

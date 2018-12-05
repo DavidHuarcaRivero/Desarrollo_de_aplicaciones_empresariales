@@ -46,7 +46,7 @@ return [
 
 	'connections' => [
 
-			'sqlite' => [
+		'sqlite' => [
 			'driver'   => 'sqlite',
 			'database' => storage_path().'/database.sqlite',
 			'prefix'   => '',
@@ -58,7 +58,6 @@ return [
 			'database'  => env('DB_DATABASE', 'forge'),
 			'username'  => env('DB_USERNAME', 'forge'),
 			'password'  => env('DB_PASSWORD', ''),
-			'port'  => env('DB_PORT', '33066'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

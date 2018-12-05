@@ -34,7 +34,7 @@
 	<body>
 		<div class="container">
 			<div class="content">
-				<div class="title">Not found page</div>
+				<div class="title">NOT FOUND PAGE</div>
 			</div>
 		</div>
 	</body>
