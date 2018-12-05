@@ -1,0 +1,16 @@
+
+Observaciones:
+
+- En las reglas sólo se indican condiciones.
+- Toda aplicación web recibe solicitudes para completar todo tipo de acciones.
+- El recibir dependencias sería la inyección.
+- Las dependencias son simplemente objetos de una clase.
+- La clase Request está en el namespace "Illuminate\Http\Request", y es el 1er paso para usarlo.
+
+Conclusiones:
+
+- Laravel nos facilita todos los datos de la solicitud a través HTTP Request.
+- Cada solicitud que enviamos al servidor va con una serie de datos, que van por el protocolo HTTP.
+- Los datos en Laravel se acceden a través del Request, que podemos recibir en el controlador mediante la inyección de dependencias.
+- Para que el inyector sepa qué va a inyectar, definimos la clase Request.
+- El método url() recupera la URL completa de una solicitud.
